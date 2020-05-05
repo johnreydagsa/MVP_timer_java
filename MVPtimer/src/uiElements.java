@@ -19,13 +19,19 @@ public class uiElements {
 		mainframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		
-        String[] columns = {"MVP Name", "MVP Location", "MVP Death Time", "Time Until Spawn", "Comments"};
+        String[] columns = {"MVP Name", "MVP Location", "Spawn Time", "Death Time", "Time Until Spawn", "Element"};
 
         Object[][] data = {
-                {"Katty", "Smith", "SnowBoard", 5, false},
-                {"Jhon", "Doe", "Rowing", 3, true},
-                {"Sue", "Black", "Knitting", 2, false},
-                {"Jane", "White", "Speed ride", 20, true}
+                {"Amon Ra", "moc_pryd06", "60~70 min", "21:00", 2, "Fire 200%"},
+                {"Atroce 1", "ra_fild02", "240~250 min", "21:00", 2, "Holy 175%"},
+                {"Atroce 2", "ra_fild03", "180~190 min", "21:00", 2, "Holy 175%"},
+                {"Atroce 3", "ra_fild04", "300~310 min", "21:00", 2, "Holy 175%"},
+                {"Atroce 4", "ve_fild01", "180~190 min", "21:00", 2, "Holy 175%"},
+                {"Atroce 5", "ve_fild02", "360~370 min", "21:00", 2, "Holy 175%"},
+                {"Atroce 6", "gld_dun03_2", "480~490 min", "21:00", 2, "Holy 175%"},
+                {"Bascojin", "lou_dun03", "117~127 min", "21:00", 2, "Earth 200%"},
+                {"Baphomet", "prt_maze03", "120~130 min", "21:00", 2, "Holy 175%"},
+                {"Beelzebub", "abbey03", "60 min", "21:00", 2, "Ghost 200%"}
         };
 
         JTable table = new JTable(data, columns);
@@ -33,7 +39,7 @@ public class uiElements {
 
         JScrollPane pane = new JScrollPane(table);
         mainframe.add(pane);
-        //table.setVisible(true);
+ 
         
         mainframe.setVisible(true);
 		
