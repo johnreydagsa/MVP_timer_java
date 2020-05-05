@@ -26,16 +26,16 @@ public class uiElements {
         String[] columns = {"MVP Name", "MVP Location", "Spawn Time", "Death Time", "Time Until Spawn", "Element"};
 
         Object[][] data = {
-                {"Amon Ra", "moc_pryd06", "60~70 min", 25, 2, "Fire 200%"},
-                {"Atroce 1", "ra_fild02", "240~250 min", "21:00", 2, "Holy 175%"},
-                {"Atroce 2", "ra_fild03", "180~190 min", "21:00", 2, "Holy 175%"},
-                {"Atroce 3", "ra_fild04", "300~310 min", "21:00", 2, "Holy 175%"},
-                {"Atroce 4", "ve_fild01", "180~190 min", "21:00", 2, "Holy 175%"},
-                {"Atroce 5", "ve_fild02", "360~370 min", "21:00", 2, "Holy 175%"},
-                {"Atroce 6", "gld_dun03_2", "480~490 min", "21:00", 2, "Holy 175%"},
-                {"Bascojin", "lou_dun03", "117~127 min", "21:00", 2, "Earth 200%"},
-                {"Baphomet", "prt_maze03", "120~130 min", "21:00", 2, "Holy 175%"},
-                {"Beelzebub", "abbey03", "60 min", "21:00", 2, "Ghost 200%"}
+                {"Amon Ra", "moc_pryd06", "60~70 min", 0, 2, "Fire 200%"},
+                {"Atroce 1", "ra_fild02", "240~250 min", null, 2, "Holy 175%"},
+                {"Atroce 2", "ra_fild03", "180~190 min", null, 2, "Holy 175%"},
+                {"Atroce 3", "ra_fild04", "300~310 min", null, 2, "Holy 175%"},
+                {"Atroce 4", "ve_fild01", "180~190 min", null, 2, "Holy 175%"},
+                {"Atroce 5", "ve_fild02", "360~370 min", null, 2, "Holy 175%"},
+                {"Atroce 6", "gld_dun03_2", "480~490 min", null, 2, "Holy 175%"},
+                {"Bascojin", "lou_dun03", "117~127 min", null, 2, "Earth 200%"},
+                {"Baphomet", "prt_maze03", "120~130 min", null, 2, "Holy 175%"},
+                {"Beelzebub", "abbey03", "60 min", null, 2, "Ghost 200%"}
         };
         
         
@@ -64,17 +64,20 @@ public class uiElements {
  
         
         mainframe.setVisible(true);
-        
-
-      
+             
         while(true) {
-            Object mynum = table.getValueAt(0, 3);            
-            table.setValueAt(mynum, 0, 4);
+        	//calculate amon ra
+            int mynum = Integer.parseInt(table.getValueAt(0, 3).toString());  
+            //int inteeg = (Integer) mynum;
+            int num2 = mynum - 1;
+            table.setValueAt(num2, 0, 4);
             
-        }
-	
-        
+        }	
 	}
+	
+	
+	
+	
 	
 	public void sayhi() {
 		System.out.println("hi");

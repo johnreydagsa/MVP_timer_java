@@ -1,10 +1,4 @@
-import java.awt.EventQueue;
 
-import javax.swing.JFrame;
-import javax.swing.JTable;
-import java.awt.BorderLayout;
-import javax.swing.JPasswordField;
-import javax.swing.JButton;
 
 public class MVPtimerwb {
 
@@ -14,6 +8,8 @@ public class MVPtimerwb {
 		element.initialize();
 	
 		element.sayhi();
+		//display instructions
+		//display table
 	}
 
 
