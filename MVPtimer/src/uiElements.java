@@ -65,9 +65,7 @@ public class uiElements {
         
         mainframe.setVisible(true);
         
-        //int mynum = (int) table.getValueAt(0,3);  
-        //table.setValueAt(mynum,0,4);
-        //System.out.println(mynum);
+
       
         while(true) {
             Object mynum = table.getValueAt(0, 3);            
