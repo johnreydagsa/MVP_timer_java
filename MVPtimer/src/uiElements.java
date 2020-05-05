@@ -26,7 +26,7 @@ public class uiElements {
         String[] columns = {"MVP Name", "MVP Location", "Spawn Time", "Death Time", "Time Until Spawn", "Element"};
 
         Object[][] data = {
-                {"Amon Ra", "moc_pryd06", "60~70 min", scan, 2, "Fire 200%"},
+                {"Amon Ra", "moc_pryd06", "60~70 min", 25, 2, "Fire 200%"},
                 {"Atroce 1", "ra_fild02", "240~250 min", "21:00", 2, "Holy 175%"},
                 {"Atroce 2", "ra_fild03", "180~190 min", "21:00", 2, "Holy 175%"},
                 {"Atroce 3", "ra_fild04", "300~310 min", "21:00", 2, "Holy 175%"},
@@ -44,25 +44,38 @@ public class uiElements {
         	@Override
         	public boolean isCellEditable(int row, int column)
         	{
-        		if(column == 0 || column == 1 || column == 2) {
-        			return false;
+        		if(column == 3) {
+        			return true;
 
         		}else {
-        			return true;
+        			return false;
         		}
         	}
         };
         
+               
 
         JTable table = new JTable(model);
         table.setBounds(750, 200, 650, 700);
+        
 
         JScrollPane pane = new JScrollPane(table);
         mainframe.add(pane);
  
         
         mainframe.setVisible(true);
-		
+        
+        //int mynum = (int) table.getValueAt(0,3);  
+        //table.setValueAt(mynum,0,4);
+        //System.out.println(mynum);
+      
+        while(true) {
+            Object mynum = table.getValueAt(0, 3);            
+            table.setValueAt(mynum, 0, 4);
+            
+        }
+	
+        
 	}
 	
 	public void sayhi() {
