@@ -10,10 +10,11 @@ import javax.swing.table.DefaultTableModel;
 
 import java.util.Scanner;
 
-public class uiElements {
+public class uiElements extends mylogic {
 
 	private JFrame mainframe;
 	Scanner scan = new Scanner(System.in);
+	mylogic logeec = new mylogic();
 	
 	
 	
@@ -27,8 +28,8 @@ public class uiElements {
 
         Object[][] data = {
                 {"Amon Ra", "moc_pryd06", "60~70 min", 0, 2, "Fire 200%"},
-                {"Atroce 1", "ra_fild02", "240~250 min", null, 2, "Holy 175%"},
-                {"Atroce 2", "ra_fild03", "180~190 min", null, 2, "Holy 175%"},
+                {"Atroce 1", "ra_fild02", "240~250 min", 0, 2, "Holy 175%"},
+                {"Atroce 2", "ra_fild03", "180~190 min", 0, 2, "Holy 175%"},
                 {"Atroce 3", "ra_fild04", "300~310 min", null, 2, "Holy 175%"},
                 {"Atroce 4", "ve_fild01", "180~190 min", null, 2, "Holy 175%"},
                 {"Atroce 5", "ve_fild02", "360~370 min", null, 2, "Holy 175%"},
@@ -66,11 +67,17 @@ public class uiElements {
         mainframe.setVisible(true);
              
         while(true) {
-        	//calculate amon ra
-            int mynum = Integer.parseInt(table.getValueAt(0, 3).toString());  
-            //int inteeg = (Integer) mynum;
-            int num2 = mynum - 1;
-            table.setValueAt(num2, 0, 4);
+        	
+        	// Display Amon Ra Spawn time based on user input Death Time
+            int amonraDeathTime = Integer.parseInt(table.getValueAt(0, 3).toString());  
+            int amonraSpawnTime = logeec.calcAmonRa(amonraDeathTime);
+            table.setValueAt(amonraSpawnTime, 0, 4);
+            
+        	// Display Atroce1 Spawn time based on user input Death Time
+            int atroce1DeathTime = Integer.parseInt(table.getValueAt(1, 3).toString());
+            int atroce1SpawnTime = logeec.calcAtroce1(atroce1DeathTime);
+            table.setValueAt(atroce1SpawnTime, 1, 4);
+            
             
         }	
 	}
