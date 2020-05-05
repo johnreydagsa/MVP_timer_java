@@ -7,7 +7,7 @@ public class MVPtimerwb {
 		uiElements element = new uiElements();
 		element.initialize();
 	
-		element.sayhi();
+
 		//display instructions
 		//display table
 	}

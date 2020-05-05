@@ -1,8 +1,14 @@
 
 public class mylogic {
 
-	public int calcAmonRa (int arg) {
-		return arg - 1;
+	public String calcAmonRa (int arg) {
+		arg += 100;
+		if(arg > 2400) {
+			arg -= 2400;
+			return "0" + Integer.toString(arg);
+		}
+			
+		return Integer.toString(arg);
 		
 	}
 
