@@ -12,7 +12,7 @@ public class uiElements extends mylogic {
 	
 	public void initialize() {
 		mainframe = new JFrame("XIVRO MVP Spawn Time Tracker by beep boop");
-		mainframe.setBounds(650, 200, 730, 700);
+		mainframe.setBounds(650, 200, 750, 700);
 		mainframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		
@@ -29,16 +29,16 @@ public class uiElements extends mylogic {
                 {"Bascojin", "lou_dun03", "117~127 min", 0000, 0, "Earth 200%"},
                 {"Baphomet", "prt_maze03", "120~130 min", 0000, 0, "Holy 175%"},
                 {"Beelzebub", "abbey03", "60 min", 0000, 0, "Ghost 200%"},
-                {"Dark Lord 1", "gl_churchyard", "60-70 min", 0000, 2, "Holy/Fire 200%"},
-                {"Dark Lord 2", "gld_dun04", "480-490 min", 0000, 2, "Holy/Fire 200%"},
-                {"Dark Lord 3", "gl_dun04_2", "480-490 min", 0000, 2, "Holy/Fire 200%"},
-                {"Detardeurus", "abyss_03", "40 min", 0000, 2, "Holy 175%"},
-                {"Doppelganger", "gef_dun02", "120~130 min", 0000, 2, "Holy 175%"},
-                {"Baphomet", "prt_maze03", "120~130 min", 0000, 2, "Holy 175%"},
-                {"Baphomet", "prt_maze03", "120~130 min", 0000, 2, "Holy 175%"},
-                {"Baphomet", "prt_maze03", "120~130 min", 0000, 2, "Holy 175%"},
-                {"Baphomet", "prt_maze03", "120~130 min", 0000, 2, "Holy 175%"},
-                {"Baphomet", "prt_maze03", "120~130 min", 0000, 2, "Holy 175%"},
+                {"Dark Lord 1", "gl_churchyard", "60-70 min", 0000, 0, "Holy/Fire 200%"},
+                {"Dark Lord 2", "gld_dun04", "480-490 min", 0000, 0, "Holy/Fire 200%"},
+                {"Dark Lord 3", "gl_dun04_2", "480-490 min", 0000, 0, "Holy/Fire 200%"},
+                {"Detardeurus", "abyss_03", "40 min", 0000, 0, "Holy 175%"},
+                {"Doppelganger 1", "gef_dun02", "120~130 min", 0000, 0, "Holy 175%"},
+                {"Doppelganger 2", "gld_dun02", "480-490 min", 0000, 0, "Holy 175%"},
+                {"Baphomet", "prt_maze03", "120~130 min", 0000, 0, "Holy 175%"},
+                {"Baphomet", "prt_maze03", "120~130 min", 0000, 0, "Holy 175%"},
+                {"Baphomet", "prt_maze03", "120~130 min", 0000, 0, "Holy 175%"},
+                {"Baphomet", "prt_maze03", "120~130 min", 0000, 0, "Holy 175%"},
                 
         };
         
@@ -60,7 +60,7 @@ public class uiElements extends mylogic {
                
 
         JTable table = new JTable(model);
-        table.setBounds(750, 200, 730, 700);
+        table.setBounds(750, 200, 750, 700);
         
 
         JScrollPane pane = new JScrollPane(table);
