@@ -94,14 +94,15 @@ public class uiElements extends mylogic {
         };
         
         JTable table = new JTable(model);
-        table.setSize(1000, 454);
+        table.setSize(1000, 442);
+        table.setRowHeight(35);
         
         JScrollPane ragnaScrollPane = new JScrollPane(table);
         JPanel ragnaPanel = new JPanel();  
         
-        ragnaScrollPane.setPreferredSize(new Dimension(1000, 454));
+        ragnaScrollPane.setPreferredSize(new Dimension(1000, 442));
         ragnaPanel.add(ragnaScrollPane);
-        ragnaPanel.setPreferredSize(new Dimension(1000, 454));      
+        ragnaPanel.setPreferredSize(new Dimension(1000, 442));      
         
         mainframe.add(ragnaPanel);
                 

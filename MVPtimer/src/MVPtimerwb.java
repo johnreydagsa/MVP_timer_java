@@ -19,6 +19,7 @@ public class MVPtimerwb {
 		// *** ORDER OF WORK ***
 		// list all mvps [done]
 		// add glds [done]
+		// adjust table row heights [done]
 		// add comments to code
 		// iron out spawn time logic/calculations
 		// handle invalid inputs
