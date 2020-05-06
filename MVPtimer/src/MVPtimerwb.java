@@ -30,7 +30,7 @@ public class MVPtimerwb {
 		// add the LHZ bosses
 		
 		// *** ADJUSTED TIMER MVPS ***
-		// beelzebub, detardeurus, ifrit, gloom
+		// beelzebub, detardeurus, ifrit, gloom, Tao, Randgris
 	}
 
 

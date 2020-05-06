@@ -60,11 +60,21 @@ public class uiElements extends mylogic {
                 {"Maya 2", "gld_dun02_2 (Luina)", "120~180 min", 0000, 0, "Insect", "Earth 4", "Fire 200%"},
                 {"Maya 3", "gld_dun03 (Valk)", "120~180 min", 0000, 0, "Insect", "Earth 4", "Fire 200%"},
                 {"Mistress", "mjolnir_04", "120~130 min", 0000, 0, "Insect", "Wind 4", "Earth 200%"},
-                {"Maya", "anthell02", "120~180 min", 0000, 0, "Insect", "Earth 4", "Fire 200%"},
-                {"Maya", "anthell02", "120~180 min", 0000, 0, "Insect", "Earth 4", "Fire 200%"},
-                {"Maya", "anthell02", "120~180 min", 0000, 0, "Insect", "Earth 4", "Fire 200%"},
-                {"Maya", "anthell02", "120~180 min", 0000, 0, "Insect", "Earth 4", "Fire 200%"},
-                {"Maya", "anthell02", "120~180 min", 0000, 0, "Insect", "Earth 4", "Fire 200%"},
+                {"Moonlight Flower", "pay_dun04", "60~70 min", 0000, 0, "Demon", "Fire 3", "Water 200%"},
+                {"Nidhoggr's Shadow", "2@nyd", "Once Daily", 0000, 0, "Dragon", "Shadow 4", "Holy 200%"},
+                {"Orc Hero 1", "gef_fild14", "60~70 min", 0000, 0, "Demi-Human", "Earth 2", "Fire 175%"},
+                {"Orc Hero 2", "gef_fild02", "1440~1450 min", 0000, 0, "Demi-Human", "Earth 2", "Fire 175%"},
+                {"Orc Lord", "gef_fild10", "120~130 min", 0000, 0, "Demi-Human", "Earth 4", "Fire 200%"},
+                {"Osiris", "moc_pryd04", "60~70 min", 0000, 0, "Undead", "Undead 4", "Holy / Fire 200%"},
+                {"Pharaoh", "in_sphinx5", "60~70 min", 0000, 0, "Demi-Human", "Shadow 3", "Holy 175%"},
+                {"Phreeoni", "moc_fild17", "120~130 min", 0000, 0, "Brute", "Neutral 3", "Any 100% (but ghost)"},
+                {"RSX 0806", "ein_dun02", "125~135 min", 0000, 0, "Formless", "Neutral 3", "Any 100% (but ghost)"},
+                {"Tao Gunka", "beach_dun", "60 min", 0000, 0, "Demon", "Neutral 3", "Any 100% (but ghost)"},
+                {"Thanatos", "thana_boss", "Once Daily", 0000, 0, "Demon", "Ghost 4", "Ghost 200%"},
+                {"Turtle General", "tur_dun04", "60~70 min", 0000, 0, "Brute", "Earth 2", "Fire 175%"},
+                {"Valkyrie Randgris", "odin_tem03", "60 min", 0000, 0, "Angel", "Holy 4", "Shadow 200%"},
+                {"Vesper", "jupe_core", "120~130 min", 0000, 0, "Brute", "Holy 2", "Shadow 150%"},
+                {"Wounded Morroc", "moc_fild22", "60 min", 0000, 0, "Demon", "Shadow 4", "Holy 200%"}
                 
         };
         
