@@ -25,6 +25,7 @@ public class MVPtimerwb {
 		// format table and make it pretty
 		// a way to sort to see which mvps are spawning closest
 		// add an important loots column
+		// add the LHZ bosses
 	}
 
 
