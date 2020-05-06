@@ -18,14 +18,19 @@ public class MVPtimerwb {
 		
 		// *** ORDER OF WORK ***
 		// list all mvps
+		// add glds
 		// add comments to code
 		// iron out spawn time logic/calculations
+		// handle invalid inputs
 		// calculate rest of mvps
 		// test cases
 		// format table and make it pretty
 		// a way to sort to see which mvps are spawning closest
 		// add an important loots column
 		// add the LHZ bosses
+		
+		// *** ADJUSTED TIMER MVPS ***
+		// beelzebub, detardeurus, ifrit, gloom
 	}
 
 
