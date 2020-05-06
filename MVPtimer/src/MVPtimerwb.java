@@ -11,11 +11,6 @@ public class MVPtimerwb {
 		//display instructions
 		//display table
 		
-		// *** FUTURE WORK ***
-		// change cell color depending on elemental weakness
-		// add instruction screen within same window
-		// add a server clock feature
-		
 		// *** ORDER OF WORK ***
 		// list all mvps [done]
 		// add glds [done]
@@ -29,6 +24,12 @@ public class MVPtimerwb {
 		// a way to sort to see which mvps are spawning closest
 		// add an important loots column
 		// add the LHZ bosses
+		
+		
+		// *** FUTURE WORK ***
+		// change cell color depending on elemental weakness
+		// add instruction screen within same window
+		// add a server clock feature
 		
 		// *** ADJUSTED TIMER MVPS ***
 		// beelzebub, detardeurus, ifrit, gloom, Tao, Randgris
