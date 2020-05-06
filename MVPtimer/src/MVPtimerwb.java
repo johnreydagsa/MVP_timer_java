@@ -17,8 +17,8 @@ public class MVPtimerwb {
 		// add a server clock feature
 		
 		// *** ORDER OF WORK ***
-		// list all mvps
-		// add glds
+		// list all mvps [done]
+		// add glds [done]
 		// add comments to code
 		// iron out spawn time logic/calculations
 		// handle invalid inputs
