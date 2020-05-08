@@ -14,13 +14,16 @@ public class uiElements extends mylogic {
 	
 	
 	public void initialize() {
+		
+		// Set title of JFrame and some properties
 		mainframe = new JFrame("XIVRO MVP Spawn Time Tracker by beep boop");
 		mainframe.setBounds(650, 200, 1020, 700);
 		mainframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		
+		// These are the headers for each colum
         String[] columns = {"MVP Name", "MVP Location", "Spawn Time", "Death Time", "Server Spawn Time", "Race", "Property", "Elemental Weakness"};
-
+        
+        // Entries for each row representing all the various MVPs
         Object[][] data = {
                 {"Amon Ra", "moc_pryd06", "60~70 min", 0000, 0, "Demi-Human", "Earth 3", "Fire 200%"},
                 {"Atroce 1", "ra_fild02", "240~250 min", 0000, 0, "Brute", "Shadow 3", "Holy 175%"},
@@ -78,7 +81,7 @@ public class uiElements extends mylogic {
                 
         };
         
-        
+        // Create a default table model and add the items above. Make some columns uneditable too
         DefaultTableModel model = new DefaultTableModel(data, columns) 
         {
         	@Override
@@ -93,10 +96,12 @@ public class uiElements extends mylogic {
         	}
         };
         
+        // Create a table and add the default model to it
         JTable table = new JTable(model);
         table.setSize(1000, 442);
         table.setRowHeight(35);
         
+        // Create JScrollPane, add table to it and add them to a JPanel
         JScrollPane ragnaScrollPane = new JScrollPane(table);
         JPanel ragnaPanel = new JPanel();  
         
@@ -104,10 +109,11 @@ public class uiElements extends mylogic {
         ragnaPanel.add(ragnaScrollPane);
         ragnaPanel.setPreferredSize(new Dimension(1000, 442));      
         
-        mainframe.add(ragnaPanel);
-                
+        // add JPanel to JFrame and make JFrame visible
+        mainframe.add(ragnaPanel);                
         mainframe.setVisible(true);
-             
+        
+        // This is a while loop that takes input from user and will calculate spawn timer of MVP and display it
         while(true) {
         	
         	// Display Amon Ra Spawn time based on user input Death Time
