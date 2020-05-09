@@ -432,6 +432,109 @@ public class uiElements extends mylogic {
             }         
             table.setValueAt(maya3SpawnTime, 34, 4);
             
+            // mistress (row 35)
+            int mistressDeathTime = Integer.parseInt(table.getValueAt(35, 3).toString());
+            String mistressSpawnTime = "";
+            if(mistressDeathTime > 2400 || (mistressDeathTime % 100) > 59 || mistressDeathTime < 0) {
+            	mistressSpawnTime = "Invalid Input";
+            }else {
+            	mistressSpawnTime = logeec.calcTwoHourMVP(mistressDeathTime);
+            }         
+            table.setValueAt(mistressSpawnTime, 35, 4);
+            
+            // moonlight flower (row 36)
+            int moonDeathTime = Integer.parseInt(table.getValueAt(36, 3).toString());
+            String moonSpawnTime = "";
+            if(moonDeathTime > 2400 || (moonDeathTime % 100) > 59 || moonDeathTime < 0) {
+            	moonSpawnTime = "Invalid Input";
+            }else {
+            	moonSpawnTime = logeec.calcOneHourMVP(moonDeathTime);
+            }         
+            table.setValueAt(moonSpawnTime, 36, 4);
+            
+            // orc hero 1 (row 37)
+            int hero1DeathTime = Integer.parseInt(table.getValueAt(37, 3).toString());
+            String hero1SpawnTime = "";
+            if(hero1DeathTime > 2400 || (hero1DeathTime % 100) > 59 || hero1DeathTime < 0) {
+            	hero1SpawnTime = "Invalid Input";
+            }else {
+            	hero1SpawnTime = logeec.calcOneHourMVP(hero1DeathTime);
+            }         
+            table.setValueAt(hero1SpawnTime, 37, 4);
+            
+            // orc hero 2 (row 38)
+            int hero2DeathTime = Integer.parseInt(table.getValueAt(38, 3).toString());
+            String hero2SpawnTime = "";
+            if(hero2DeathTime > 2400 || (hero2DeathTime % 100) > 59 || hero2DeathTime < 0) {
+            	hero2SpawnTime = "Invalid Input";
+            }else {
+            	hero2SpawnTime = logeec.calcOneHourMVP(hero2DeathTime);
+            }         
+            table.setValueAt(hero2SpawnTime, 38, 4);
+            
+            // orc lord (row 39)
+            int lordDeathTime = Integer.parseInt(table.getValueAt(39, 3).toString());
+            String lordSpawnTime = "";
+            if(lordDeathTime > 2400 || (lordDeathTime % 100) > 59 || lordDeathTime < 0) {
+            	lordSpawnTime = "Invalid Input";
+            }else {
+            	lordSpawnTime = logeec.calcTwoHourMVP(lordDeathTime);
+            }         
+            table.setValueAt(lordSpawnTime, 39, 4);
+            
+            // osiris (row 40)
+            int osirisDeathTime = Integer.parseInt(table.getValueAt(40, 3).toString());
+            String osirisSpawnTime = "";
+            if(osirisDeathTime > 2400 || (osirisDeathTime % 100) > 59 || osirisDeathTime < 0) {
+            	osirisSpawnTime = "Invalid Input";
+            }else {
+            	osirisSpawnTime = logeec.calcOneHourMVP(osirisDeathTime);
+            }         
+            table.setValueAt(osirisSpawnTime, 40, 4);
+            
+            // pharaoh (row 41)
+            int pharaohDeathTime = Integer.parseInt(table.getValueAt(41, 3).toString());
+            String pharaohSpawnTime = "";
+            if(pharaohDeathTime > 2400 || (pharaohDeathTime % 100) > 59 || pharaohDeathTime < 0) {
+            	pharaohSpawnTime = "Invalid Input";
+            }else {
+            	pharaohSpawnTime = logeec.calcOneHourMVP(pharaohDeathTime);
+            }         
+            table.setValueAt(pharaohSpawnTime, 41, 4);
+            
+            // phreeoni (row 42)
+            int phreeoniDeathTime = Integer.parseInt(table.getValueAt(42, 3).toString());
+            String phreeoniSpawnTime = "";
+            if(phreeoniDeathTime > 2400 || (phreeoniDeathTime % 100) > 59 || phreeoniDeathTime < 0) {
+            	phreeoniSpawnTime = "Invalid Input";
+            }else {
+            	phreeoniSpawnTime = logeec.calcTwoHourMVP(phreeoniDeathTime);
+            }         
+            table.setValueAt(phreeoniSpawnTime, 42, 4);
+            
+            // RSX 0806 (row 43)
+            
+            // stormy knight (row 44)
+            int skDeathTime = Integer.parseInt(table.getValueAt(44, 3).toString());
+            String skSpawnTime = "";
+            if(skDeathTime > 2400 || (skDeathTime % 100) > 59 || skDeathTime < 0) {
+            	skSpawnTime = "Invalid Input";
+            }else {
+            	skSpawnTime = logeec.calcOneHourMVP(skDeathTime);
+            }         
+            table.setValueAt(skSpawnTime, 44, 4);
+            
+            // tao gunka (row 45)
+            int taoDeathTime = Integer.parseInt(table.getValueAt(45, 3).toString());
+            String taoSpawnTime = "";
+            if(taoDeathTime > 2400 || (taoDeathTime % 100) > 59 || taoDeathTime < 0) {
+            	taoSpawnTime = "Invalid Input";
+            }else {
+            	taoSpawnTime = logeec.calcOneHourMVP(taoDeathTime);
+            }         
+            table.setValueAt(taoSpawnTime, 45, 4);
+            
+            
         }	
 	}
 }
