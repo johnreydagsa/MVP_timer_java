@@ -39,7 +39,9 @@ public class mylogic {
 			}else if(doubleDigit(arg)){
 				return "00:" + Integer.toString(arg);
 			}else{
-				return "0" + Integer.toString(arg);
+				String newArg0 = Integer.toString(arg);
+				
+				return "0" + newArg0.substring(0, 1)+ ":" + newArg0.substring(1);
 			}
 			
 		}else {
@@ -58,8 +60,8 @@ public class mylogic {
 
 	public String calcTwoHourMVP(int arg) {
 		
-		if(arg >= 2301) {
-			arg += 100;
+		if(arg >= 2201) {
+			arg += 200;
 			arg -= 2400;
 			
 			if(singleDigit(arg)) {
@@ -67,11 +69,13 @@ public class mylogic {
 			}else if(doubleDigit(arg)){
 				return "00:" + Integer.toString(arg);
 			}else{
-				return "0" + Integer.toString(arg);
+				String newArg0 = Integer.toString(arg);
+				
+				return "0" + newArg0.substring(0, 1)+ ":" + newArg0.substring(1);
 			}
 			
 		}else {
-			arg += 100;
+			arg += 200;
 			if(arg < 1000) {
 				String newArg1 = Integer.toString(arg);
 				

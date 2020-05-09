@@ -117,14 +117,32 @@ public class uiElements extends mylogic {
         	// Display Amon Ra Spawn time based on user input Death Time
             int amonraDeathTime = Integer.parseInt(table.getValueAt(0, 3).toString());
             String amonraSpawnTime = "";
-            if(amonraDeathTime > 2400) {
+            if(amonraDeathTime > 2400 || (amonraDeathTime % 100) > 59) {
             	amonraSpawnTime = "Invalid Input";
             }else {
             	amonraSpawnTime = logeec.calcOneHourMVP(amonraDeathTime);
-            }          
-            
+            }         
             table.setValueAt(amonraSpawnTime, 0, 4);
             
+            // atroce 1
+            int atroce1DeathTime = Integer.parseInt(table.getValueAt(1, 3).toString());
+            String atroce1SpawnTime = "";
+            if(atroce1DeathTime > 2400 || (atroce1DeathTime % 100) > 59) {
+            	atroce1SpawnTime = "Invalid Input";
+            }else {
+            	atroce1SpawnTime = logeec.calcOneHourMVP(atroce1DeathTime);
+            }         
+            table.setValueAt(atroce1SpawnTime, 1, 4);
+            
+            // baphomet
+            int baphometDeathTime = Integer.parseInt(table.getValueAt(8, 3).toString());
+            String baphometSpawnTime = "";
+            if(baphometDeathTime > 2400 || (baphometDeathTime % 100) > 59) {
+            	baphometSpawnTime = "Invalid Input";
+            }else {
+            	baphometSpawnTime = logeec.calcTwoHourMVP(baphometDeathTime);
+            }         
+            table.setValueAt(baphometSpawnTime, 8, 4);
 
             
             
