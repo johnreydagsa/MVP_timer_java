@@ -134,6 +134,58 @@ public class uiElements extends mylogic {
             }         
             table.setValueAt(atroce1SpawnTime, 1, 4);
             
+            // atroce 2
+            int atroce2DeathTime = Integer.parseInt(table.getValueAt(2, 3).toString());
+            String atroce2SpawnTime = "";
+            if(atroce2DeathTime > 2400 || (atroce2DeathTime % 100) > 59 || atroce2DeathTime < 0) {
+            	atroce2SpawnTime = "Invalid Input";
+            }else {
+            	atroce2SpawnTime = logeec.calcOneHourMVP(atroce2DeathTime);
+            }         
+            table.setValueAt(atroce2SpawnTime, 2, 4);
+            
+            // atroce 3
+            int atroce3DeathTime = Integer.parseInt(table.getValueAt(3, 3).toString());
+            String atroce3SpawnTime = "";
+            if(atroce3DeathTime > 2400 || (atroce3DeathTime % 100) > 59 || atroce3DeathTime < 0) {
+            	atroce3SpawnTime = "Invalid Input";
+            }else {
+            	atroce3SpawnTime = logeec.calcOneHourMVP(atroce3DeathTime);
+            }         
+            table.setValueAt(atroce3SpawnTime, 3, 4);
+            
+            // atroce 4
+            int atroce4DeathTime = Integer.parseInt(table.getValueAt(4, 3).toString());
+            String atroce4SpawnTime = "";
+            if(atroce4DeathTime > 2400 || (atroce4DeathTime % 100) > 59 || atroce4DeathTime < 0) {
+            	atroce4SpawnTime = "Invalid Input";
+            }else {
+            	atroce4SpawnTime = logeec.calcOneHourMVP(atroce4DeathTime);
+            }         
+            table.setValueAt(atroce4SpawnTime, 4, 4);
+            
+            // atroce 5
+            int atroce5DeathTime = Integer.parseInt(table.getValueAt(5, 3).toString());
+            String atroce5SpawnTime = "";
+            if(atroce5DeathTime > 2400 || (atroce5DeathTime % 100) > 59 || atroce5DeathTime < 0) {
+            	atroce5SpawnTime = "Invalid Input";
+            }else {
+            	atroce5SpawnTime = logeec.calcOneHourMVP(atroce5DeathTime);
+            }         
+            table.setValueAt(atroce5SpawnTime, 5, 4);
+            
+            // atroce 6
+            int atroce6DeathTime = Integer.parseInt(table.getValueAt(6, 3).toString());
+            String atroce6SpawnTime = "";
+            if(atroce6DeathTime > 2400 || (atroce6DeathTime % 100) > 59 || atroce6DeathTime < 0) {
+            	atroce6SpawnTime = "Invalid Input";
+            }else {
+            	atroce6SpawnTime = logeec.calcOneHourMVP(atroce6DeathTime);
+            }         
+            table.setValueAt(atroce6SpawnTime, 6, 4);
+            
+            //bascojin
+            
             // baphomet
             int baphometDeathTime = Integer.parseInt(table.getValueAt(8, 3).toString());
             String baphometSpawnTime = "";
@@ -144,6 +196,78 @@ public class uiElements extends mylogic {
             }         
             table.setValueAt(baphometSpawnTime, 8, 4);
 
+            
+            // beelzebub
+            int beelzebubDeathTime = Integer.parseInt(table.getValueAt(9, 3).toString());
+            String beelzebubSpawnTime = "";
+            if(beelzebubDeathTime > 2400 || (beelzebubDeathTime % 100) > 59 || beelzebubDeathTime < 0) {
+            	beelzebubSpawnTime = "Invalid Input";
+            }else {
+            	beelzebubSpawnTime = logeec.calcOneHourMVP(beelzebubDeathTime);
+            }         
+            table.setValueAt(beelzebubSpawnTime, 9, 4);
+            
+            // dark lord
+            int darklordDeathTime = Integer.parseInt(table.getValueAt(10, 3).toString());
+            String darklordSpawnTime = "";
+            if(darklordDeathTime > 2400 || (darklordDeathTime % 100) > 59 || darklordDeathTime < 0) {
+            	darklordSpawnTime = "Invalid Input";
+            }else {
+            	darklordSpawnTime = logeec.calcOneHourMVP(darklordDeathTime);
+            }         
+            table.setValueAt(darklordSpawnTime, 10, 4);
+            
+            // dark lord 2
+            int darklord2DeathTime = Integer.parseInt(table.getValueAt(11, 3).toString());
+            String darklord2SpawnTime = "";
+            if(darklord2DeathTime > 2400 || (darklord2DeathTime % 100) > 59 || darklord2DeathTime < 0) {
+            	darklord2SpawnTime = "Invalid Input";
+            }else {
+            	darklord2SpawnTime = logeec.calcOneHourMVP(darklord2DeathTime);
+            }         
+            table.setValueAt(darklord2SpawnTime, 11, 4);
+
+            // dark lord 3
+            int darklord3DeathTime = Integer.parseInt(table.getValueAt(12, 3).toString());
+            String darklord3SpawnTime = "";
+            if(darklord3DeathTime > 2400 || (darklord3DeathTime % 100) > 59 || darklord3DeathTime < 0) {
+            	darklord3SpawnTime = "Invalid Input";
+            }else {
+            	darklord3SpawnTime = logeec.calcOneHourMVP(darklord3DeathTime);
+            }         
+            table.setValueAt(darklord3SpawnTime, 12, 4);
+            
+            //detardeurus 13
+            
+            // doppel1
+            int doppel1DeathTime = Integer.parseInt(table.getValueAt(14, 3).toString());
+            String doppel1SpawnTime = "";
+            if(doppel1DeathTime > 2400 || (doppel1DeathTime % 100) > 59 || doppel1DeathTime < 0) {
+            	doppel1SpawnTime = "Invalid Input";
+            }else {
+            	doppel1SpawnTime = logeec.calcTwoHourMVP(doppel1DeathTime);
+            }         
+            table.setValueAt(doppel1SpawnTime, 14, 4);
+            
+            // doppel2
+            int doppel2DeathTime = Integer.parseInt(table.getValueAt(15, 3).toString());
+            String doppel2SpawnTime = "";
+            if(doppel2DeathTime > 2400 || (doppel2DeathTime % 100) > 59 || doppel2DeathTime < 0) {
+            	doppel2SpawnTime = "Invalid Input";
+            }else {
+            	doppel2SpawnTime = logeec.calcOneHourMVP(doppel2DeathTime);
+            }         
+            table.setValueAt(doppel2SpawnTime, 15, 4);
+            
+            // dracula
+            int draculaDeathTime = Integer.parseInt(table.getValueAt(16, 3).toString());
+            String draculaSpawnTime = "";
+            if(draculaDeathTime > 2400 || (draculaDeathTime % 100) > 59 || draculaDeathTime < 0) {
+            	draculaSpawnTime = "Invalid Input";
+            }else {
+            	draculaSpawnTime = logeec.calcOneHourMVP(draculaDeathTime);
+            }         
+            table.setValueAt(draculaSpawnTime, 16, 4);
             
             
             

@@ -16,7 +16,7 @@ public class MVPtimerwb {
 		// add glds [done]
 		// adjust table row heights [done]
 		// add comments to code [ commented all available currently]
-		// account for MVP timer changes 
+		// account for MVP timer changes [done EXCEPT FOR BASCO AND 1 MORE] ***************************
 		// iron out spawn time logic/calculations [done]
 		// handle invalid inputs [done]
 		// calculate rest of mvps
