@@ -54,8 +54,7 @@ public class uiElements extends mylogic {
                 {"Gopinich", "mosk_dun03", "120~130 min", 0000, 0, "Brute", "Earth 3", "Fire 200%"},
                 {"Ifrit", "thor_v03", "60 min", 0000, 0, "Formless", "Fire 4", "Water 200%"},
                 {"Incantation Samurai", "ama_dun03", "91~101 min", 0000, 0, "Demi-Human", "Shadow 3", "Holy 175%"},
-                {"Kiel D-01", "kh_dun02", "120~180 min", 0000, 0, "Formless", "Shadow 2", "Holy 150%"},
-                {"Stormy Knight", "xmas_dun02", "60~70 min", 0000, 0, "Formless", "Wind 4", "Earth 200%"},                
+                {"Kiel D-01", "kh_dun02", "60 min", 0000, 0, "Formless", "Shadow 2", "Holy 150%"},                
                 {"Lady Tanee", "ayo_dun02", "60 min", 0000, 0, "Plant", "Wind 3", "Earth 200%"},
                 {"Lord of Death", "niflheim", "60 min", 0000, 0, "Demon", "Shadow 3", "Holy 175%"},
                 {"Maya 1", "anthell02", "60 min", 0000, 0, "Insect", "Earth 4", "Fire 200%"},
@@ -70,6 +69,7 @@ public class uiElements extends mylogic {
                 {"Pharaoh", "in_sphinx5", "60~70 min", 0000, 0, "Demi-Human", "Shadow 3", "Holy 175%"},
                 {"Phreeoni", "moc_fild17", "120~130 min", 0000, 0, "Brute", "Neutral 3", "Any 100% (but ghost)"},
                 {"RSX 0806", "ein_dun02", "125~135 min", 0000, 0, "Formless", "Neutral 3", "Any 100% (but ghost)"},
+                {"Stormy Knight", "xmas_dun02", "60~70 min", 0000, 0, "Formless", "Wind 4", "Earth 200%"},
                 {"Tao Gunka", "beach_dun", "60 min", 0000, 0, "Demon", "Neutral 3", "Any 100% (but ghost)"},
                 {"Turtle General", "tur_dun04", "60~70 min", 0000, 0, "Brute", "Earth 2", "Fire 175%"},
                 {"Valkyrie Randgris", "odin_tem03", "60 min", 0000, 0, "Angel", "Holy 4", "Shadow 200%"},
@@ -360,8 +360,77 @@ public class uiElements extends mylogic {
             }         
             table.setValueAt(gopinichSpawnTime, 26, 4);
             
+            // ifrit (row 27)
+            int ifritDeathTime = Integer.parseInt(table.getValueAt(27, 3).toString());
+            String ifritSpawnTime = "";
+            if(ifritDeathTime > 2400 || (ifritDeathTime % 100) > 59 || ifritDeathTime < 0) {
+            	ifritSpawnTime = "Invalid Input";
+            }else {
+            	ifritSpawnTime = logeec.calcOneHourMVP(ifritDeathTime);
+            }         
+            table.setValueAt(ifritSpawnTime, 27, 4);
             
+            // incantation samurai
             
+            // kiel D-01 (row 29)
+            int kielDeathTime = Integer.parseInt(table.getValueAt(29, 3).toString());
+            String kielSpawnTime = "";
+            if(kielDeathTime > 2400 || (kielDeathTime % 100) > 59 || kielDeathTime < 0) {
+            	kielSpawnTime = "Invalid Input";
+            }else {
+            	kielSpawnTime = logeec.calcOneHourMVP(kielDeathTime);
+            }         
+            table.setValueAt(kielSpawnTime, 29, 4);
+            
+            //  lady tanee (row 30)
+            int taneeDeathTime = Integer.parseInt(table.getValueAt(30, 3).toString());
+            String taneeSpawnTime = "";
+            if(taneeDeathTime > 2400 || (taneeDeathTime % 100) > 59 || taneeDeathTime < 0) {
+            	taneeSpawnTime = "Invalid Input";
+            }else {
+            	taneeSpawnTime = logeec.calcOneHourMVP(taneeDeathTime);
+            }         
+            table.setValueAt(taneeSpawnTime, 30, 4);
+            
+            // lady tanee (row 31)
+            int lodDeathTime = Integer.parseInt(table.getValueAt(31, 3).toString());
+            String lodSpawnTime = "";
+            if(lodDeathTime > 2400 || (lodDeathTime % 100) > 59 || lodDeathTime < 0) {
+            	lodSpawnTime = "Invalid Input";
+            }else {
+            	lodSpawnTime = logeec.calcOneHourMVP(lodDeathTime);
+            }         
+            table.setValueAt(lodSpawnTime, 31, 4);
+            
+            // maya 1 (row 32)
+            int maya1DeathTime = Integer.parseInt(table.getValueAt(32, 3).toString());
+            String maya1SpawnTime = "";
+            if(maya1DeathTime > 2400 || (maya1DeathTime % 100) > 59 || maya1DeathTime < 0) {
+            	maya1SpawnTime = "Invalid Input";
+            }else {
+            	maya1SpawnTime = logeec.calcOneHourMVP(maya1DeathTime);
+            }         
+            table.setValueAt(maya1SpawnTime, 32, 4);
+            
+            // maya 2 (row 33)
+            int maya2DeathTime = Integer.parseInt(table.getValueAt(33, 3).toString());
+            String maya2SpawnTime = "";
+            if(maya2DeathTime > 2400 || (maya2DeathTime % 100) > 59 || maya2DeathTime < 0) {
+            	maya2SpawnTime = "Invalid Input";
+            }else {
+            	maya2SpawnTime = logeec.calcOneHourMVP(maya2DeathTime);
+            }         
+            table.setValueAt(maya2SpawnTime, 33, 4);
+            
+            // maya 3 (row 34)
+            int maya3DeathTime = Integer.parseInt(table.getValueAt(34, 3).toString());
+            String maya3SpawnTime = "";
+            if(maya3DeathTime > 2400 || (maya3DeathTime % 100) > 59 || maya3DeathTime < 0) {
+            	maya3SpawnTime = "Invalid Input";
+            }else {
+            	maya3SpawnTime = logeec.calcOneHourMVP(maya3DeathTime);
+            }         
+            table.setValueAt(maya3SpawnTime, 34, 4);
             
         }	
 	}
