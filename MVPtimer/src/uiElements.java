@@ -298,7 +298,7 @@ public class uiElements extends mylogic {
             }         
             table.setValueAt(eddga2SpawnTime, 19, 4);
             
-            // eddga 3 (row 19)
+            // eddga 3 (row 20)
             int eddga3DeathTime = Integer.parseInt(table.getValueAt(20, 3).toString());
             String eddga3SpawnTime = "";
             if(eddga3DeathTime > 2400 || (eddga3DeathTime % 100) > 59 || eddga3DeathTime < 0) {
@@ -307,6 +307,61 @@ public class uiElements extends mylogic {
             	eddga3SpawnTime = logeec.calcOneHourMVP(eddga3DeathTime);
             }         
             table.setValueAt(eddga3SpawnTime, 20, 4);
+            
+            // evil snake lord
+            
+            // fallen bishop (row 22)
+            int fallenDeathTime = Integer.parseInt(table.getValueAt(22, 3).toString());
+            String fallenSpawnTime = "";
+            if(fallenDeathTime > 2400 || (fallenDeathTime % 100) > 59 || fallenDeathTime < 0) {
+            	fallenSpawnTime = "Invalid Input";
+            }else {
+            	fallenSpawnTime = logeec.calcTwoHourMVP(fallenDeathTime);
+            }         
+            table.setValueAt(fallenSpawnTime, 22, 4);
+            
+            // garm (row 23)
+            int garmDeathTime = Integer.parseInt(table.getValueAt(23, 3).toString());
+            String garmSpawnTime = "";
+            if(garmDeathTime > 2400 || (garmDeathTime % 100) > 59 || garmDeathTime < 0) {
+            	garmSpawnTime = "Invalid Input";
+            }else {
+            	garmSpawnTime = logeec.calcTwoHourMVP(garmDeathTime);
+            }         
+            table.setValueAt(garmSpawnTime, 23, 4);
+            
+            // gloom (row 24)
+            int gloomDeathTime = Integer.parseInt(table.getValueAt(24, 3).toString());
+            String gloomSpawnTime = "";
+            if(gloomDeathTime > 2400 || (gloomDeathTime % 100) > 59 || gloomDeathTime < 0) {
+            	gloomSpawnTime = "Invalid Input";
+            }else {
+            	gloomSpawnTime = logeec.calcOneHourMVP(gloomDeathTime);
+            }         
+            table.setValueAt(gloomSpawnTime, 24, 4);
+            
+            // golden thief bug (row 25)
+            int gtbDeathTime = Integer.parseInt(table.getValueAt(25, 3).toString());
+            String gtbSpawnTime = "";
+            if(gtbDeathTime > 2400 || (gtbDeathTime % 100) > 59 || gtbDeathTime < 0) {
+            	gtbSpawnTime = "Invalid Input";
+            }else {
+            	gtbSpawnTime = logeec.calcOneHourMVP(gtbDeathTime);
+            }         
+            table.setValueAt(gtbSpawnTime, 25, 4);
+            
+            // gopinich (row 26)
+            int gopinichDeathTime = Integer.parseInt(table.getValueAt(26, 3).toString());
+            String gopinichSpawnTime = "";
+            if(gopinichDeathTime > 2400 || (gopinichDeathTime % 100) > 59 || gopinichDeathTime < 0) {
+            	gopinichSpawnTime = "Invalid Input";
+            }else {
+            	gopinichSpawnTime = logeec.calcTwoHourMVP(gopinichDeathTime);
+            }         
+            table.setValueAt(gopinichSpawnTime, 26, 4);
+            
+            
+            
             
         }	
 	}

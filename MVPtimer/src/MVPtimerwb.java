@@ -20,6 +20,7 @@ public class MVPtimerwb {
 		// iron out spawn time logic/calculations [done]
 		// handle invalid inputs [done]
 		// calculate rest of mvps
+		// do a check for each entries
 		// test cases
 		// format table and make it pretty
 		// a way to sort to see which mvps are spawning closest
