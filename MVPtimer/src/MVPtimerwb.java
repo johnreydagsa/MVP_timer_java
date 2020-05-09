@@ -17,8 +17,8 @@ public class MVPtimerwb {
 		// adjust table row heights [done]
 		// add comments to code [ commented all available currently]
 		// account for MVP timer changes 
-		// iron out spawn time logic/calculations
-		// handle invalid inputs
+		// iron out spawn time logic/calculations [done]
+		// handle invalid inputs [done]
 		// calculate rest of mvps
 		// test cases
 		// format table and make it pretty
