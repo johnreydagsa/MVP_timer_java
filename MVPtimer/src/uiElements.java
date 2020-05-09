@@ -63,7 +63,6 @@ public class uiElements extends mylogic {
                 {"Maya 3", "gld_dun03 (Valk)", "60 min", 0000, 0, "Insect", "Earth 4", "Fire 200%"},
                 {"Mistress", "mjolnir_04", "120~130 min", 0000, 0, "Insect", "Wind 4", "Earth 200%"},
                 {"Moonlight Flower", "pay_dun04", "60~70 min", 0000, 0, "Demon", "Fire 3", "Water 200%"},
-                {"Nidhoggr's Shadow", "2@nyd", "Once Daily", 0000, 0, "Dragon", "Shadow 4", "Holy 200%"},
                 {"Orc Hero 1", "gef_fild14", "60~70 min", 0000, 0, "Demi-Human", "Earth 2", "Fire 175%"},
                 {"Orc Hero 2", "gef_fild02", "60 min", 0000, 0, "Demi-Human", "Earth 2", "Fire 175%"},
                 {"Orc Lord", "gef_fild10", "120~130 min", 0000, 0, "Demi-Human", "Earth 4", "Fire 200%"},
@@ -269,8 +268,45 @@ public class uiElements extends mylogic {
             }         
             table.setValueAt(draculaSpawnTime, 16, 4);
             
+            // drake
+            int drakeDeathTime = Integer.parseInt(table.getValueAt(17, 3).toString());
+            String drakeSpawnTime = "";
+            if(drakeDeathTime > 2400 || (drakeDeathTime % 100) > 59 || drakeDeathTime < 0) {
+            	drakeSpawnTime = "Invalid Input";
+            }else {
+            	drakeSpawnTime = logeec.calcTwoHourMVP(drakeDeathTime);
+            }         
+            table.setValueAt(drakeSpawnTime, 17, 4);
             
+            // eddga 1
+            int eddga1DeathTime = Integer.parseInt(table.getValueAt(18, 3).toString());
+            String eddga1SpawnTime = "";
+            if(eddga1DeathTime > 2400 || (eddga1DeathTime % 100) > 59 || eddga1DeathTime < 0) {
+            	eddga1SpawnTime = "Invalid Input";
+            }else {
+            	eddga1SpawnTime = logeec.calcTwoHourMVP(eddga1DeathTime);
+            }         
+            table.setValueAt(eddga1SpawnTime, 18, 4);
             
+            // eddga 2 (row 19)
+            int eddga2DeathTime = Integer.parseInt(table.getValueAt(19, 3).toString());
+            String eddga2SpawnTime = "";
+            if(eddga2DeathTime > 2400 || (eddga2DeathTime % 100) > 59 || eddga2DeathTime < 0) {
+            	eddga2SpawnTime = "Invalid Input";
+            }else {
+            	eddga2SpawnTime = logeec.calcOneHourMVP(eddga2DeathTime);
+            }         
+            table.setValueAt(eddga2SpawnTime, 19, 4);
+            
+            // eddga 3 (row 19)
+            int eddga3DeathTime = Integer.parseInt(table.getValueAt(20, 3).toString());
+            String eddga3SpawnTime = "";
+            if(eddga3DeathTime > 2400 || (eddga3DeathTime % 100) > 59 || eddga3DeathTime < 0) {
+            	eddga3SpawnTime = "Invalid Input";
+            }else {
+            	eddga3SpawnTime = logeec.calcOneHourMVP(eddga3DeathTime);
+            }         
+            table.setValueAt(eddga3SpawnTime, 20, 4);
             
         }	
 	}
