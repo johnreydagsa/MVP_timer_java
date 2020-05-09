@@ -534,7 +534,45 @@ public class uiElements extends mylogic {
             }         
             table.setValueAt(taoSpawnTime, 45, 4);
             
+            // turtle general (row 46)
+            int tgDeathTime = Integer.parseInt(table.getValueAt(46, 3).toString());
+            String tgSpawnTime = "";
+            if(tgDeathTime > 2400 || (tgDeathTime % 100) > 59 || tgDeathTime < 0) {
+            	tgSpawnTime = "Invalid Input";
+            }else {
+            	tgSpawnTime = logeec.calcOneHourMVP(tgDeathTime);
+            }         
+            table.setValueAt(tgSpawnTime, 46, 4);
             
+            // valkyrie randgris (row 47)
+            int valkDeathTime = Integer.parseInt(table.getValueAt(47, 3).toString());
+            String valkSpawnTime = "";
+            if(valkDeathTime > 2400 || (valkDeathTime % 100) > 59 || valkDeathTime < 0) {
+            	valkSpawnTime = "Invalid Input";
+            }else {
+            	valkSpawnTime = logeec.calcOneHourMVP(valkDeathTime);
+            }         
+            table.setValueAt(valkSpawnTime, 47, 4);
+            
+            // vesper (row 48)
+            int vesperDeathTime = Integer.parseInt(table.getValueAt(48, 3).toString());
+            String vesperSpawnTime = "";
+            if(vesperDeathTime > 2400 || (vesperDeathTime % 100) > 59 || vesperDeathTime < 0) {
+            	vesperSpawnTime = "Invalid Input";
+            }else {
+            	vesperSpawnTime = logeec.calcTwoHourMVP(vesperDeathTime);
+            }         
+            table.setValueAt(vesperSpawnTime, 48, 4);
+            
+            // wounded morroc (row 49)
+            int morrocDeathTime = Integer.parseInt(table.getValueAt(49, 3).toString());
+            String morrocSpawnTime = "";
+            if(morrocDeathTime > 2400 || (morrocDeathTime % 100) > 59 || morrocDeathTime < 0) {
+            	morrocSpawnTime = "Invalid Input";
+            }else {
+            	morrocSpawnTime = logeec.calcOneHourMVP(morrocDeathTime);
+            }         
+            table.setValueAt(morrocSpawnTime, 49, 4);
         }	
 	}
 }
