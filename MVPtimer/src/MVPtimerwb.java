@@ -19,7 +19,8 @@ public class MVPtimerwb {
 		// account for MVP timer changes [done EXCEPT FOR BASCO AND 1 MORE] ***************************
 		// iron out spawn time logic/calculations [done]
 		// handle invalid inputs [done]
-		// calculate rest of mvps
+		// calculate rest of mvps [done] [detardearus, basco and other mvps with weird timers not done]
+		// egnigem is missing
 		// do a check for each entries
 		// test cases
 		// format table and make it pretty

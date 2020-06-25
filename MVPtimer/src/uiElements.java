@@ -184,6 +184,14 @@ public class uiElements extends mylogic {
             table.setValueAt(atroce6SpawnTime, 6, 4);
             
             //bascojin
+            int bascojinDeathTime = Integer.parseInt(table.getValueAt(7, 3).toString());
+            String bascojinSpawnTime = "";
+            if(bascojinDeathTime > 2400 || (bascojinDeathTime % 100) > 59 || bascojinDeathTime < 0) {
+            	bascojinSpawnTime = "Invalid Input";
+            }else {
+            	bascojinSpawnTime = logeec.calcOneHourMVP(bascojinDeathTime);
+            }         
+            table.setValueAt(bascojinSpawnTime, 7, 4);
             
             // baphomet
             int baphometDeathTime = Integer.parseInt(table.getValueAt(8, 3).toString());
@@ -237,6 +245,7 @@ public class uiElements extends mylogic {
             table.setValueAt(darklord3SpawnTime, 12, 4);
             
             //detardeurus 13
+            
             
             // doppel1
             int doppel1DeathTime = Integer.parseInt(table.getValueAt(14, 3).toString());
