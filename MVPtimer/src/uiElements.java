@@ -4,7 +4,10 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import javax.swing.RowSorter;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableModel;
+import javax.swing.table.TableRowSorter;
 
 public class uiElements extends mylogic {
 
@@ -74,7 +77,8 @@ public class uiElements extends mylogic {
                 {"Turtle General", "tur_dun04", "60~70 min", 0000, 0, "Brute", "Earth 2", "Fire 175%"},
                 {"Valkyrie Randgris", "odin_tem03", "60 min", 0000, 0, "Angel", "Holy 4", "Shadow 200%"},
                 {"Vesper", "jupe_core", "120~130 min", 0000, 0, "Brute", "Holy 2", "Shadow 150%"},
-                {"Wounded Morroc", "moc_fild22", "60 min", 0000, 0, "Demon", "Shadow 4", "Holy 200%"}
+                {"Wounded Morroc", "moc_fild22", "60 min", 0000, 0, "Demon", "Shadow 4", "Holy 200%"},
+                {"Egnigem Cenia", "lhz_dun02", "120 min", 0000, 0, "Demi-Human", "Fire 2", "Water 200%"}
                 
         };
         
@@ -97,6 +101,11 @@ public class uiElements extends mylogic {
         JTable table = new JTable(model);
         table.setSize(1000, 442);
         table.setRowHeight(35);
+        
+        // for sorting the table
+        RowSorter<TableModel> sorter = new TableRowSorter<TableModel>(model);
+        
+        table.setRowSorter(sorter);
         
         // Create JScrollPane, add table to it and add them to a JPanel
         JScrollPane ragnaScrollPane = new JScrollPane(table);
@@ -582,6 +591,16 @@ public class uiElements extends mylogic {
             	morrocSpawnTime = logeec.calcOneHourMVP(morrocDeathTime);
             }         
             table.setValueAt(morrocSpawnTime, 49, 4);
+            
+            // egnigem cenia (row 50)
+            int egnigemDeathTime = Integer.parseInt(table.getValueAt(50, 3).toString());
+            String egnigemSpawnTime = "";
+            if(egnigemDeathTime > 2400 || (egnigemDeathTime % 100) > 59 || egnigemDeathTime < 0) {
+            	egnigemSpawnTime = "Invalid Input";
+            }else {
+            	egnigemSpawnTime = logeec.calcTwoHourMVP(egnigemDeathTime);
+            }         
+            table.setValueAt(egnigemSpawnTime, 50, 4);
         }	
 	}
 }
